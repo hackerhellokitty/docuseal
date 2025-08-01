@@ -1,0 +1,80 @@
+<section class="flex items-center justify-center">
+  <div class="py-10 mx-auto max-w-7xl">
+    <div class="max-w-xl mx-auto">
+      <div class="text-center">
+        <div class="relative flex flex-col items-center">
+         <img src="/logo.png" alt="KuronekoSign Logo" width="300" height="100" />
+          <h1 class="text-6xl font-bold mt-4 mb-4">
+            KuronekoSign
+          </h1>
+          <% if Docuseal.version.present? %>
+            <a href="https://github.com/docusealco/docuseal/releases" target="_blank" class="badge badge-outline badge-lg block mx-auto">
+              v<%= Docuseal.version %>
+            </a>
+          <% end %>
+        </div>
+        <h2 class="mt-4 mb-16 text-lg text-center text-gray-600">
+          เว็บแพลตฟอร์มเซลฟ์โฮสต์แบบโอเพนซอร์ส ที่แมว ๆ จะได้เซ็นเอกสารดิจิทัลแบบปลอดภัยและเร็วจี๋ พร้อมจัดการเอกสารแบบมือโปร เหมียว!
+        </h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 gap-12 md:gap-10 md:grid-cols-2">
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <div class="text-center transition-all">
+            <div class="inline-block p-4 mb-4 -mt-16 bg-base-content rounded-full">
+              <%= svg_icon('brand_docker', class: 'w-10 h-10 text-base-100 stroke-1') %>
+            </div>
+            <h3 class="mb-4 text-2xl font-semibold">เริ่มต้นง่ายเหมียว</h3>
+            <p class="text-base text-gray-500">
+             รันบนเครื่องแมวเองด้วย Docker container หรือจะปล่อยบน PaaS ที่ชอบ ก็คลิกเดียวเสร็จเหมียว ๆ!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <div class="text-center transition-all">
+            <div class="inline-block p-4 mb-4 -mt-16 bg-base-content rounded-full">
+              <%= svg_icon('devices', class: 'w-10 h-10 text-base-100') %>
+            </div>
+            <h3 class="mb-4 text-2xl font-semibold">เหมียว! รองรับมือถือเต็มรูปแบบ</h3>
+            <p class="text-base text-gray-500">
+              ดูและเซ็นเอกสารดิจิทัลออนไลน์ได้จากทุกอุปกรณ์เลยนะ เหมียว~
+              ฟอร์มเอกสารของ Docuseal ปรับแต่งมาให้เหมาะกับหน้าจอทุกไซซ์ ไม่ว่าจะจอแมวเล็ก ๆ หรือจอแมวใหญ่ ๆ ก็ใช้งานง่ายเหมียว!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <div class="text-center transition-all">
+            <div class="inline-block p-4 mb-4 -mt-16 bg-base-content rounded-full">
+              <%= svg_icon('shield_check', class: 'w-10 h-10 text-base-100') %>
+            </div>
+            <h3 class="mb-4 text-2xl font-semibold">ปลอดภัยเหมียว</h3>
+            <p class="text-base text-gray-500">
+              ตั้งโฮสต์บนเครื่องของแมวเอง แล้วต่อผ่าน VPN เพื่อให้เอกสารสำคัญเปิดดูได้แค่ในองค์กรของแมวเท่านั้น เหมียวแน่นอน!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <div class="text-center transition-all">
+            <div class="inline-block p-4 mb-4 -mt-16 bg-base-content rounded-full">
+              <%= svg_icon('brand_github', class: 'w-10 h-10 text-base-100') %>
+            </div>
+            <h3 class="mb-4 text-2xl font-semibold">ซอฟต์แวร์โอเพนซอร์ส</h3>
+            <p class="text-base text-gray-500">
+              ซอร์สโค้ดได้รับอนุญาตภายใต้สัญญาอนุญาต AGPLv3 และสามารถดูได้ที่ github.com/docusealco <br>
+              โปรเจกต์นี้เป็นการ Fork มาจาก github.com/hackerhellokitty/docuseal <br>
+              ผู้ร่วมพัฒนาโอเพนซอร์สพร้อมให้ความช่วยเหลือเสมอ!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%= render 'shared/attribution', with_counter: true %>
