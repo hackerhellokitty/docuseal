@@ -27,7 +27,7 @@ module DocuSeal
 
     config.i18n.available_locales = %i[en en-US en-GB es-ES fr-FR pt-PT de-DE it-IT
                                        es it de fr pl uk cs pt he nl ar ko th]
-    config.i18n.fallbacks = [:en]
+    config.i18n.fallbacks = [:th]
 
     config.exceptions_app = ->(env) { ErrorsController.action(:show).call(env) }
 
